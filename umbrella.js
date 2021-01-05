@@ -1,13 +1,13 @@
 class umbrella
 {
-	constructor(x,y,width,height)
+	constructor(x,y,r)
 	{
 		var options={
 			isStatic:true			
 			}
-		this.body=Bodies.rectangle(x,y,width,height, options);
-		this.width = width;
-		this.height = height;
+			
+			this.r = r;
+		this.body = Bodies.circle(x,y,this.r, options);
 		 World.add(world, this.body);
 		
 	   this.man1 = loadImage("mam walking/walking_1.png");
@@ -22,8 +22,8 @@ class umbrella
 	display()
 	{
 		push(); 
-		    rectMode(CENTER);
-			rect(this.body.position.x, this.body.position.y,this.width,this.height);
+		    ellipseMode(RADIUS);
+			ellipse(this.body.position.x, this.body.position.y,this.r,this.r);
 			imageMode(CENTER);
 			image(this.man1,250,500,400,600); 
 			/*image(this.man2,250,500,400,600);
