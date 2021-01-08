@@ -10,14 +10,14 @@ class umbrella
 		this.body = Bodies.circle(x,y,this.r, options);
 		 World.add(world, this.body);
 		
-	   this.man1 = loadImage("mam walking/walking_1.png");
-	   this.man2 = loadImage(" mam walking/walking_2.png");
-	   this.man3 = loadImage(" mam walking/walking_3.png");
-	   this.man4 = loadImage(" mam walking/walking_4.png");
-	   this.man5 = loadImage(" mam walking/walking_5.png");
-	   this.man6 = loadImage(" mam walking/walking_6.png");
-	   this.man7 = loadImage(" mam walking/walking_7.png");
-	   this.man8 = loadImage(" mam walking/walking_8.png");
+	   this.man1 = loadImage("../mam walking/walking_1.png");
+	   this.man2 = loadImage("../mam walking/walking_2.png");
+	   this.man3 = loadImage("../mam walking/walking_3.png");
+	   this.man4 = loadImage("../mam walking/walking_4.png");
+	   this.man5 = loadImage("../mam walking/walking_5.png");
+	   this.man6 = loadImage("../mam walking/walking_6.png");
+	   this.man7 = loadImage("../mam walking/walking_7.png");
+	   this.man8 = loadImage("../mam walking/walking_8.png");
 	}
 	display()
 	{
